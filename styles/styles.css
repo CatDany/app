@@ -1,0 +1,32 @@
+.custom-control-label {
+    background: transparent;
+    color: #4C8DC8;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 2.25rem;
+}
+
+.custom-control-label:before, .custom-control-label:after {
+  top: 0;
+  left: -10px;
+  height: 2.25rem;
+  width: 2.25rem;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+
+.custom-control-label.checked {
+  background-color: #4C8DC8 !important;
+}
+
+.btn {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.buy-sell-info {
+  font-size: 9pt;
+  margin-left: .5rem;
+}
