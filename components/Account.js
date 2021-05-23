@@ -3,21 +3,7 @@ import axios from 'axios';
 
 class Account extends Component {
 
-    state = { buy: 0, sell: 0 }
-    
-    handleBuy = evt => {
-        axios.post('/trade', { buy: this.state.buy });
-        this.setState({ buy: 0 });
-    }
-
-    handleSell = evt => {
-        axios.post('/trade', { sell: this.state.sell });
-        this.setState({ sell: 0 });
-    }
-
-    handleChange = evt => {
-        this.setState({[evt.target.name]: evt.target.value})
-    }
+    state = {  }
     
     render() {
         
@@ -29,7 +15,7 @@ class Account extends Component {
             <span className="d-block w-100 h2 text-dark col-sm mt-3 border-gray">
                 <div className="row ml-2 mt-2 border-bottom border-gray">
                     <div className="col-6 border-right border-gray">Cash</div>
-                    <div className="col-6">${Number(cash).toFixed(2)}</div>
+                    <div className="col-6"></div>
                 </div>
                 <div className="row ml-2 mt-2 border-bottom border-gray">
                     <div className="col-6 border-right border-gray">Shares</div>
@@ -37,7 +23,7 @@ class Account extends Component {
                 </div>
                 <div className="row ml-2 mt-2 border-bottom border-gray">
                     <div className="col-6 border-right border-gray">Total Value</div>
-                    <div className="col-6">${(Number(cash)+Number(shares)*pricePerShare).toFixed(2)}</div>
+                    <div className="col-6"></div>
                 </div>
                 <div className="row ml-2 mt-2 border-gray">
                     <div className="col-6 border-right border-gray">Change</div>
